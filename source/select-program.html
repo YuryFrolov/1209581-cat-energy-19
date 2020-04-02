@@ -10,24 +10,83 @@
 <body>
   <header class="header">
     <a class="header__logo" href="index.html">
-      <img class="header__logo-image" src="https://via.placeholder.com/33x38" width="33" height="38" alt="«Кэт Энерджи»">
+      <img class="header__logo-image" src="https://via.placeholder.com/33x38" width="33" height="38"
+        alt="«Кэт Энерджи»">
     </a>
 
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"></button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item"></li>
+    <nav class="nav">
+      <button class="nav__toggle" type="button"></button>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="main-nav-link">Главная</a></li>
+        <li class="nav__item"><a href="#" class="main-nav-link">Каталог продукции</a></li>
+        <li class="nav__item"><a href="#" class="main-nav-link">Подбор программы</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="main">
 
+    <form action="" class="select-program__form">
+      <h1 class="select-program__title">Подбор программы</h1>
+      <p class="select-program__description">Заполните анкету и мы подберём программу питания для вашего кота</p>
+
+      <label for="name" class="select-program__name-label">Имя:*</label>
+      <input type="text" class="select-program__name-input" id="name" placeholder="Барсик" required>
+
+      <label for="weight" class="select-program__weight-label">Вес (кг):*</label>
+      <input type="text" class="select-program__weight-input" id="weight" placeholder="7" required>
+
+      <label for="age" class="select-program__age-label">Возраст (лет):</label>
+      <input type="text" class="select-program__age-input" id="age" placeholder="7" required>
+
+      <input type="radio" class="select-program__slim" name="program" id="slim-program">
+      <label for="slim-program" class="select-program__slim-label">Похудение</label>
+
+      <input type="radio" class="select-program__weight" name="program" id="weight-program">
+      <label for="weight-program" class="select-program__weight-label">Набор массы</label>
+
+      <input type="radio" class="select-program__advice" name="program" id="advice-program">
+      <label for="advice-program" class="select-program__advice-label">Не знаю (нужен ваш совет)</label>
+
+      <h2 class="select-program__contacts-title">Контактные данные (владельца кота)</h2>
+      <label for="email" class="select-program__email-label">E-mail:*</label>
+      <input type="text" id="email" class="select-program__email" placeholder="kuklachev@gmail.com" required>
+
+      <label for="phone" class="select-program__phone-label">Телефон:*</label>
+      <input type="text" id="phone" class="select-program__phone" placeholder="8 (960) 900-60-90" required>
+
+      <h2 class="select-program__comment-title">Контактные данные (владельца кота)</h2>
+      <textarea class="select-program__comment" name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+
+      <h2 class="select-program__extra-title">Дополнительно</h2>
+      <input class="select-program__extra-sweetener" type="checkbox" id="sweetener">
+      <label class="select-program__extra-sweetener-label" for="sweetener">Сахарозаменитель</label>
+
+      <input class="select-program__drinking-water" type="checkbox" id="drinking-water">
+      <label class="select-program__drinking-water-label" for="drinking-water">Питьевая вода</label>
+
+      <input class="select-program__milk" type="checkbox" id="milk">
+      <label class="select-program__milk-label" for="milk">Молоко</label>
+
+      <input class="select-program__vitamins" type="checkbox" id="vitamins">
+      <label class="select-program__vitamins-label" for="vitamins">Витамины</label>
+
+      <input class="select-program__order" type="submit" value="Отправить заявку">
+      <span class="select-program__small-text">* - Обязательные поля</span>
+    </form>
+
+    <section class="contacts">
+      <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
+      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <img src="https://via.placeholder.com/320x362" class="contacts__map" alt="">
+    </section>
+
   </main>
 
   <footer class="footer">
     <a class="footer__logo" href="index.html">
-      <img class="footer__logo-image" src="https://via.placeholder.com/101x18" width="101" height="18" alt="«Кэт Энерджи»">
+      <img class="footer__logo-image" src="https://via.placeholder.com/101x18" width="101" height="18"
+        alt="«Кэт Энерджи»">
     </a>
 
     <ul class="social-links">
@@ -45,12 +104,12 @@
       </li>
     </ul>
 
-    <ul class="developers">
-      <li class="developers__link">
-        <span class="developers__name">HTML Academy</span>
-        <img class="developers__logo" src="https://via.placeholder.com/27x34" alt="">
-      </li>
-    </ul>
+    <section class="developers">
+      <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <span class="developers__name">HTML Academy</span>
+      <img class="developers__logo" src="https://via.placeholder.com/27x34" alt="">
+      </a>
+    </section>
 
   </footer>
 

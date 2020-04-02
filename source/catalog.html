@@ -14,17 +14,19 @@
         alt="«Кэт Энерджи»">
     </a>
 
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"></button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item"></li>
+    <nav class="nav">
+      <button class="nav__toggle" type="button"></button>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="main-nav-link">Главная</a></li>
+        <li class="nav__item"><a href="#" class="main-nav-link">Каталог продукции</a></li>
+        <li class="nav__item"><a href="#" class="main-nav-link">Подбор программы</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="main">
+    <h1 class="catalog__title">Каталог продукции</h1>
     <ul class="catalog">
-      <h1 class="catalog__title">Каталог продукции</h1>
       <li class="catalog__item">
         <img class="catalog__item-image" src="https://via.placeholder.com/140x144"
           alt="Кошачий корм «Кэт Энерджи Про» с курицей 500 грамм">
@@ -37,6 +39,7 @@
           <dt class="catalog__item-feature">Цена</dt>
           <dd class="catalog__item-definition">700 р.</dd>
         </dl>
+        <button class="catalog-item__order">Заказать</button>
       </li>
       <li class="catalog__item">
         <img class="catalog__item-image" src="https://via.placeholder.com/140x144"
@@ -50,6 +53,7 @@
           <dt class="catalog__item-feature">Цена</dt>
           <dd class="catalog__item-definition">1000 р.</dd>
         </dl>
+        <button class="catalog-item__order">Заказать</button>
       </li>
       <li class="catalog__item">
         <img class="catalog__item-image" src="https://via.placeholder.com/140x144"
@@ -63,6 +67,7 @@
           <dt class="catalog__item-feature">Цена</dt>
           <dd class="catalog__item-definition">700 р.</dd>
         </dl>
+        <button class="catalog-item__order">Заказать</button>
       </li>
       <li class="catalog__item">
         <img class="catalog__item-image" src="https://via.placeholder.com/140x144"
@@ -76,6 +81,7 @@
           <dt class="catalog__item-feature">Цена</dt>
           <dd class="catalog__item-definition">1000 р.</dd>
         </dl>
+        <button class="catalog-item__order">Заказать</button>
       </li>
       <li class="catalog__item">
         <img class="catalog__item-image" src="https://via.placeholder.com/140x144"
@@ -89,6 +95,7 @@
           <dt class="catalog__item-feature">Цена</dt>
           <dd class="catalog__item-definition">400 р.</dd>
         </dl>
+        <button class="catalog-item__order">Заказать</button>
       </li>
       <li class="catalog__item">
         <img class="catalog__item-image" src="https://via.placeholder.com/140x144"
@@ -102,6 +109,7 @@
           <dt class="catalog__item-feature">Цена</dt>
           <dd class="catalog__item-definition">700 р.</dd>
         </dl>
+        <button class="catalog-item__order">Заказать</button>
       </li>
       <li class="catalog__item">
         <img class="catalog__item-image" src="https://via.placeholder.com/140x144"
@@ -115,6 +123,7 @@
           <dt class="catalog__item-feature">Цена</dt>
           <dd class="catalog__item-definition">500 р.</dd>
         </dl>
+        <button class="catalog-item__order">Заказать</button>
       </li>
     </ul>
 
@@ -124,11 +133,58 @@
       <p class="more__slogan">На самом деле вкусов гораздо больше!</p>
       <a class="more__link" href="#">Показать всё</a>
     </section>
+
+    <section class="extra">
+      <h2 class="extra__title">Дополнительные товары</h2>
+      <ul class="extra__list">
+        <li class="extra__item">
+          <p class="extra__item-head">Сахарозаменитель</p>
+          <dl class="extra__item-properties">
+            <dt class="extra__item-property">1 упаковка (100 г)</dt>
+            <dd class="extra__item-definition">200 Р.</dd>
+          </dl>
+          <button class="extra__order">Заказать</button>
+        </li>
+        <li class="extra__item">
+          <p class="extra__item-head">Питьевая вода</p>
+          <dl class="extra__item-properties">
+            <dt class="extra__item-property">5 литров</dt>
+            <dd class="extra__item-definition">50 Р.</dd>
+          </dl>
+          <button class="extra__order">Заказать</button>
+        </li>
+        <li class="extra__item">
+          <p class="extra__item-head">Молоко</p>
+          <dl class="extra__item-properties">
+            <dt class="extra__item-property">1 литр</dt>
+            <dd class="extra__item-definition">100 Р.</dd>
+          </dl>
+          <button class="extra__order">Заказать</button>
+        </li>
+        <li class="extra__item">
+          <p class="extra__item-head">Витамины</p>
+          <dl class="extra__item-properties">
+            <dt class="extra__item-property">1 упаковка (30 г)</dt>
+            <dd class="extra__item-definition">300 Р.</dd>
+          </dl>
+          <button class="extra__order">Заказать</button>
+        </li>
+      </ul>
+      <img src="https://via.placeholder.com/280x289" class="extra__gift" alt="">
+      <p class="extra__gift-description">Закажите все и получите чехол для кота в подарок!</p>
+    </section>
+
+    <section class="contacts">
+      <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
+      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <img src="https://via.placeholder.com/320x362" class="contacts__map" alt="">
+    </section>
   </main>
 
   <footer class="footer">
     <a class="footer__logo" href="index.html">
-      <img class="footer__logo-image" src="https://via.placeholder.com/101x18" width="101" height="18" alt="«Кэт Энерджи»">
+      <img class="footer__logo-image" src="https://via.placeholder.com/101x18" width="101" height="18"
+        alt="«Кэт Энерджи»">
     </a>
     <ul class="social-links">
       <li class="social-links__item">
@@ -145,12 +201,12 @@
       </li>
     </ul>
 
-    <ul class="developers">
-      <li class="developers__link">
-        <span class="developers__name">HTML Academy</span>
-        <img class="developers__logo" src="https://via.placeholder.com/27x34" alt="">
-      </li>
-    </ul>
+    <section class="developers">
+      <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <span class="developers__name">HTML Academy</span>
+      <img class="developers__logo" src="https://via.placeholder.com/27x34" alt="">
+      </a>
+    </section>
 
   </footer>
 </body>
