@@ -17,7 +17,7 @@
     <nav class="nav">
       <button class="nav__toggle" type="button"></button>
       <ul class="nav__list">
-        <li class="nav__item">Главная</li>
+        <li class="nav__item"><a class="nav__link">Главная</a></li>
         <li class="nav__item"><a href="catalog.html" class="nav__link">Каталог продукции</a></li>
         <li class="nav__item"><a href="select-program.html" class="nav__link">Подбор программы</a></li>
       </ul>
@@ -91,12 +91,12 @@
     </section>
 
     <section class="result">
-      <img class="result__before-image" src="https://via.placeholder.com/311x232" alt="Кот до похудения">
-      <img class="result__after-image" src="https://via.placeholder.com/311x232" alt="Кот после похудения">
-      <label for="before" class="result__before-label">Было</label>
-      <input class="result__before-button" type="radio" name="result" id="before">
-      <input class="result__after-button" type="radio" name="result" id="after">
-      <label for="after" class="result__after-label">Стало</label>
+      <img class="result__image result__image--before" src="https://via.placeholder.com/311x232" alt="Кот до похудения">
+      <img class="result__image result__image--after" src="https://via.placeholder.com/311x232" alt="Кот после похудения">
+      <label for="before" class="result__label result__label--before">Было</label>
+      <input class="result__button result__button--before" type="radio" name="result" id="before">
+      <input class="result__button result__button--after" type="radio" name="result" id="after">
+      <label for="after" class="result__label result__label--after">Стало</label>
     </section>
 
     <section class="contacts">
@@ -108,7 +108,7 @@
   </main>
 
   <footer class="footer">
-    <a class="footer__logo" href="">
+    <a class="footer__logo">
       <img class="footer__logo-image" src="https://via.placeholder.com/101x18" width="101" height="18"
         alt="«Кэт Энерджи»">
     </a>
